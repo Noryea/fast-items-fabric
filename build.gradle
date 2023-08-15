@@ -7,7 +7,7 @@ version = getVersion()
 group = project.maven_group
 
 base {
-	archivesName = "tdi"
+	archivesName = "2d-items"
 }
 
 repositories {
