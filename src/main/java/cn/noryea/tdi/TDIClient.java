@@ -8,7 +8,7 @@ public class TDIClient implements ClientModInitializer {
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
 
-	public static final String MOD_ID = "tdi";
+	public static final String MOD_ID = "2d-items";
 
 	@Override
 	public void onInitializeClient() {

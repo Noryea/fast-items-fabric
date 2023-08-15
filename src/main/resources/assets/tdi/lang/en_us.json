@@ -1,6 +1,6 @@
 {
-  "tdi.midnightconfig.title": "2D Items Settings",
-  "tdi.midnightconfig.enable": "Enable 2D Item Rendering",
-  "tdi.midnightconfig.shadowsForThreeDModels": "Render Entity Shadows for 3D Models",
-  "tdi.midnightconfig.shadowsForTwoDModels": "Render Entity Shadows for 2D Models"
+  "2d-items.midnightconfig.title": "2D Items Settings",
+  "2d-items.midnightconfig.enable": "Enable 2D Item Rendering",
+  "2d-items.midnightconfig.shadowsForThreeDModels": "Render Entity Shadows for 3D Models",
+  "2d-items.midnightconfig.shadowsForTwoDModels": "Render Entity Shadows for 2D Models"
 }

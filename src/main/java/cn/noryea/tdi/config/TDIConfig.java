@@ -7,6 +7,6 @@ public class TDIConfig extends MidnightConfig {
 
     @Entry public static boolean shadowsForThreeDModels = true;
 
-    @Entry public static boolean shadowsForTwoDModels = false;
+    @Entry public static boolean shadowsForTwoDModels = true;
 
 }
