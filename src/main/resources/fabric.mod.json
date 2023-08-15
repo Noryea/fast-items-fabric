@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"sources": "https://github.com/Noryea/2d-items-fabric",
-		"issue": "https://github.com/Noryea/2d-items-fabric/issues"
+		"issues": "https://github.com/Noryea/2d-items-fabric/issues"
 	},
 	"license": "CC0-1.0",
 	"environment": "client",
