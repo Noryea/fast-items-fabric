@@ -7,7 +7,7 @@ version = getVersion()
 group = project.maven_group
 
 base {
-	archivesName = "2d-items"
+	archivesName = "fastitems"
 }
 
 repositories {
