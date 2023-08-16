@@ -1,25 +1,26 @@
 {
 	"schemaVersion": 1,
-	"id": "tdi",
+	"id": "fastitems",
 	"version": "${version}",
-	"name": "2D Items",
-	"description": "Make the item rendering 2 dimensional.",
+	"name": "Fast Items",
+	"description": "Optimize item rendering by transforming item entities to 2D",
+	"icon": "assets/fastitems/icon.png",
 	"authors": [
 		"Noryea"
 	],
 	"contact": {
-		"sources": "https://github.com/Noryea/2d-items-fabric",
-		"issues": "https://github.com/Noryea/2d-items-fabric/issues"
+		"sources": "https://github.com/Noryea/fast-items-fabric",
+		"issues": "https://github.com/Noryea/fast-items-fabric/issues"
 	},
 	"license": "CC0-1.0",
 	"environment": "client",
 	"entrypoints": {
 		"client": [
-			"cn.noryea.tdi.TDIClient"
+          "cn.noryea.fastitems.FastItemsClient"
 		]
 	},
 	"mixins": [
-		"tdi.mixins.json"
+		"fastitems.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",

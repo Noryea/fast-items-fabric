@@ -1,0 +1,6 @@
+{
+  "fastitems.midnightconfig.title": "Fast Items Settings",
+  "fastitems.midnightconfig.enable": "Enable Fast Items mod",
+  "fastitems.midnightconfig.castShadows": "Render entity shadows for item entities",
+  "fastitems.midnightconfig.renderSidesOfItems": "Render the sides of item entities which are 2D models"
+}

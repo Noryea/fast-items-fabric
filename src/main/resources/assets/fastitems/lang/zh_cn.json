@@ -1,0 +1,6 @@
+{
+  "fastitems.midnightconfig.title": "快速掉落物(2D Items)模组设置",
+  "fastitems.midnightconfig.enable": "启用快速掉落物",
+  "fastitems.midnightconfig.castShadows": "渲染物品实体的阴影",
+  "fastitems.midnightconfig.renderSidesOfItems": "渲染平面物品的掉落物的侧面"
+}
