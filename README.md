@@ -1,8 +1,8 @@
-# Fabric Example Mod
+# Fast Items (2D Items)
 
-## Setup
+## Description
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+Optimize item rendering by making item entities 2-dimensional.
 
 ## License
 
