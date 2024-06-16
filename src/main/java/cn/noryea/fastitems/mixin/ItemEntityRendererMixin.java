@@ -68,6 +68,8 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<ItemEntity>
 
         BakedModel bakedModel = this.itemRenderer.getModel(itemStack, itemEntity.getWorld(), null, itemEntity.getId());
         boolean hasDepth = bakedModel.hasDepth();
+
+        //CONFIG: castShadows
         this.shadowRadius = FastItemsConfig.castShadows ? 0.15F : 0.0F;
 
         // up and down
@@ -77,8 +79,8 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<ItemEntity>
 
         // drawing
         matrixStack.multiply(this.dispatcher.getRotation());
-        // rotation correcting
-        matrixStack.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(180.0F));
+        // rotation is no longer need to fix
+        //matrixStack.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(180.0F));
 
         float o = bakedModel.getTransformation().ground.scale.x();
         float p = bakedModel.getTransformation().ground.scale.y();

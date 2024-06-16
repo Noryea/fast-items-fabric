@@ -22,13 +22,10 @@
 	"mixins": [
 		"fastitems.mixins.json"
 	],
-	"breaks": {
-		"minecraft": ">=1.21"
-	},
 	"depends": {
 		"fabricloader": ">=0.14.21",
 		"midnightlib": "*",
-		"minecraft": ">=1.20.5",
+		"minecraft": ">=1.21",
 		"java": ">=17"
 	}
 }

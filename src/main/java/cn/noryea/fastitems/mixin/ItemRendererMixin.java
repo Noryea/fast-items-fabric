@@ -33,7 +33,7 @@ public class ItemRendererMixin {
     }
 
     @ModifyVariable(method = "renderBakedItemModel", at = @At("HEAD"), index = 1, argsOnly = true)
-    private BakedModel useSimpleItemModel(BakedModel model, BakedModel arg, ItemStack stack, int light, int overlay, MatrixStack matrices, VertexConsumer vertices) {
+    private BakedModel replaceItemModelClass(BakedModel model, BakedModel arg, ItemStack stack, int light, int overlay, MatrixStack matrices, VertexConsumer vertices) {
         if(FastItemsConfig.enable && !FastItemsConfig.renderSidesOfItems && !stack.isEmpty() && !model.hasDepth() && renderMode == ModelTransformationMode.GROUND) {
             flattenedModel.setItem(model);
             return flattenedModel;
