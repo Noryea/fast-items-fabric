@@ -65,7 +65,8 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<ItemEntity>
 
         // drawing
         matrixStack.multiply(this.dispatcher.getRotation());
-        matrixStack.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(180.0F));  //rotation correction
+        // rotation correcting
+        matrixStack.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(180.0F));
 
         float o = bakedModel.getTransformation().ground.scale.x();
         float p = bakedModel.getTransformation().ground.scale.y();
