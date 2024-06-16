@@ -21,6 +21,7 @@ import net.minecraft.util.math.random.Random;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -39,8 +40,19 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<ItemEntity>
         super(ctx);
     }
 
-    @Shadow
-    protected abstract int getRenderedAmount(ItemStack stack);
+    @Unique
+    private static int getRenderedAmount(ItemStack stackSize) {
+        int count = stackSize.getCount();
+        if (count <= 1) {
+            return 1;
+        } else if (count <= 16) {
+            return 2;
+        } else if (count <= 32) {
+            return 3;
+        } else {
+            return count <= 48 ? 4 : 5;
+        }
+    }
 
     @Inject(method = "render*", at = @At("HEAD"), cancellable = true)
     public void render(ItemEntity itemEntity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i, CallbackInfo ci) {
@@ -74,7 +86,7 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<ItemEntity>
         float s;
         float t;
 
-        int renderedAmount = this.getRenderedAmount(itemStack);
+        int renderedAmount = getRenderedAmount(itemStack);
 
         if (!hasDepth) {
             float r = -0.0F * (float)(renderedAmount - 1) * 0.5F * o;
