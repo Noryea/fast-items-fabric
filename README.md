@@ -1,4 +1,6 @@
 # Fast Items (2D Items)
+## Download
+[modrinth](https://modrinth.com/mod/fast-items)
 
 ## Description
 
